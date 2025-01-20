@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Editar contato</h1>
+    <form action="/contato-atualizacao/" method="POST">
+        <input type="hidden" name="cod" value="{{contato.cod}}">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Informe o nome" value="{{contato.nome}}">
+
+        <label for="nick_name">Nick Name:</label> <!-- Corrigido -->
+        <input type="text" name="nick_name" id="nick_name" value="{{contato.nick_name}}">
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Informe o e-mail" value="{{contato.email}}">
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" name="telefone" id="telefone" placeholder="Informe o número do telefone"
+            value="{{contato.telefone}}">
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Informe a senha" , value="{{contato.senha}}">
+
+        <button type="submit">Editar</button>
+    </form>
+</div>

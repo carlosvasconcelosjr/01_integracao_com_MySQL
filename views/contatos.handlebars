@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Contatos cadastrados</h1>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Nick Name</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each contatos}}
+            <tr>
+                <td>{{this.nome}}</td>
+                <td>{{this.nick_name}}</td>
+                <td>{{this.telefone}}</td>
+                <td>{{this.email}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
