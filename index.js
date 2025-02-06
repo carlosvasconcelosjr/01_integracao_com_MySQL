@@ -153,7 +153,7 @@ app.post("/contato-exclusao/", (req, res) => {
 const conn = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Ohd2160#",
+  password: "suasenha",
   database: "contatos",
 });
 
