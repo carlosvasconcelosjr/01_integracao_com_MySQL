@@ -157,7 +157,7 @@ const conn = mysql.createConnection({
   database: "contatos",
 });
 
-// Execução da conecxão
+// Execução da conexão
 // Será necessário estabelecer a conexão a cada interação com o banco
 conn.connect(function (err) {
   if (err) {
